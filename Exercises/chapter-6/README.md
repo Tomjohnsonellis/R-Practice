@@ -9,3 +9,10 @@ nchar()
 toupper()
 paste()
 ```
+## Exercise 2: using built-in string functions
+String manipulation is always useful
+```
+substr()
+gsub()
+paste()
+```
