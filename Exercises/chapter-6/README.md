@@ -23,3 +23,6 @@ some_function <- function(input_1, input_2){
   some_value <- input_1 + input_2
   some_value
 }
+```
+## Exercise 4: Functions and conditionals
+Good ol' if statements
