@@ -22,14 +22,11 @@ words_of_the_day <- paste("'",words,"' is the word of the day!")
 # Tip: make sure all the words are lower-case, and only consider the first letter
 # of the word!
 words <- tolower(words)
-a_f_words <- words[words <= "f"]
-## The above works but for considering only the first character:
 a_f_words <- words[substring(words,1,1) <= "f"]
 
 # Create a vector `g_m_words` which are the elements in `words` that start with 
 # "g" through "m"
-## g_m_words <- words["g" < words < "m"]
-g_m_words <- words["g" < words & words <= "m"]
+g_m_words <- words["g" < substring(words,1,1) & substring(words,1,1) <= "m"]
 
 # Define a function `word_bin` that takes in three arguments: a vector of words, 
 # and two letters. The function should return a vector of words that go between 
