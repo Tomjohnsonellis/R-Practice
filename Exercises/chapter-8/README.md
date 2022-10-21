@@ -6,3 +6,10 @@ some_list <- list(
 "tag" = data_to_tag
 )
 ```
+## Exercise 2: using `*apply()` functions
+Some character counting and vectorised functions!
+```
+strsplit()
+as.list()
+sapply()
+```
