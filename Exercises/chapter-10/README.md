@@ -8,5 +8,12 @@ rownames(df, index_vector)
 ```
 
 ## Exercise 2: Working with data frames
+Practice makes perfect, ideally I should be so comfortable with dataframes that working with them feels natural
+```
+runif()
+rownames()
+mean()
+
+```
 
 ## Exercise 3: Working with built-in data setss
