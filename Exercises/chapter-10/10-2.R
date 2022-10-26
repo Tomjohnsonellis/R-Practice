@@ -35,30 +35,41 @@ salaries <- cbind(salaries, payrise = (new_salaries > current_salaries))
 ### cell rather than the whole row!)
 
 # What was the 2018 salary of Employee 57
-
+salaries["Employee 57","new_salaries"]
 
 # How many employees got a raise?
-
+sum(salaries$payrise)
 
 # What was the dollar value of the highest raise?
-
+max(salaries$adjustments)
 
 # What was the "name" of the employee who received the highest raise?
-
+## Tom here: This syntax was a little tricky first time,
+## rownames(dataframe)[condition]
+rownames(salaries)[which.max(salaries$adjustments)]
 
 # What was the largest decrease in salaries between the two years?
-
+min(salaries$adjustments)
 
 # What was the name of the employee who recieved largest decrease in salary?
-
+rownames(salaries)[which.min(salaries$adjustments)]
 
 # What was the average salary change?
-
+mean(salaries$adjustments)
 
 # For people who did not get a raise, how much money did they lose on average?
-
+## The syntax here is: function(dataframe$coloumn[condition to meet])
+mean(salaries$adjustments[salaries$payrise == FALSE])
 
 ## Consider: do the above averages match what you expected them to be based on 
 ## how you generated the salaries?
+#### Tom here: The average pay adjustment being ~2500 makes sense as
+#### we generated a uniform distribution between -5000 and +10000,
+#### It's right in the middle.
+#### The negative values also make sense, a little further off the middle but
+#### about the midpoint of -5000 and 0
 
 # Write a .csv file of your salary data to your working directory
+getwd()
+setwd("~/GitHub/R-Practice/Exercises/chapter-10")
+write.csv(salaries, "salaries.csv")
