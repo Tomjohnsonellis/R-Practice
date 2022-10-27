@@ -18,3 +18,11 @@ mean()
 
 ## Exercise 3: Working with built-in data sets
 Some more $ notation, and working with some US spending data!
+
+## Exercise 4: External data sets: Gates Foundation Educational Grants
+Read in a csv and explore the data
+```
+getwd()
+setwd()
+readcsv()
+```
