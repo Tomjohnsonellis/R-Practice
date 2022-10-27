@@ -16,4 +16,5 @@ mean()
 
 ```
 
-## Exercise 3: Working with built-in data setss
+## Exercise 3: Working with built-in data sets
+Some more $ notation, and working with some US spending data!
