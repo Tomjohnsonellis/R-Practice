@@ -10,3 +10,10 @@ select()
 filter()
 mutate()
 ```
+## Exercise 3: Using the pipe operator
+There are always different methods of doing things, dplyr is no different, in this exercise we try 3 different ways of doing the same thing, and time them!
+```
+start_time <- proc.time
+code_code_code
+proc.time - start_time
+```
