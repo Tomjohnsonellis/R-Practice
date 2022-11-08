@@ -17,3 +17,5 @@ start_time <- proc.time
 code_code_code
 proc.time - start_time
 ```
+## Exercise 4: Practicing with dplyr
+More fun with pipes! This exercise works with flight data.
