@@ -37,8 +37,33 @@ plot(dep_delay_by_month)
 # Hint: you'll have to perform a grouping operation then summarize your data
 # You can use the `head()` function to view just the first few rows
 
+## Group the data by destination, make a summary with the average arrival delay,
+## then sort the results!
+delayed <- group_by(flights, dest) %>%
+  summarise(delay = mean(arr_delay, na.rm = TRUE)) %>%
+  arrange(-delay)
 
 # You can look up these airports in the `airports` data frame!
+colnames(airports)
+?airports
+colnames(delayed)
+delayed
+filter(airports, faa == delayed$dest[1])
+
+## I wanted to make a column that was the full names but had difficulties
+## I'd have to match the dest codes to the airports dataframe, which is
+## currently beyond me.
+mutate(delayed, "name" = airports$faa)
+delayed %>%
+  mutate(name = dest) %>%
+  filter(???)
+
 
 
 # Which city was flown to with the highest average speed?
+speedy_city <- flights %>%
+  mutate(speed = distance / air_time * 60) %>%
+  group_by(dest) %>%
+  summarise(avg_speed = mean(speed, na.rm = TRUE)) %>%
+  filter(avg_speed == max(avg_speed, na.rm = TRUE))
+speedy_city
