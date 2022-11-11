@@ -53,11 +53,25 @@ filter(airports, faa == delayed$dest[1])
 ## I wanted to make a column that was the full names but had difficulties
 ## I'd have to match the dest codes to the airports dataframe, which is
 ## currently beyond me.
-mutate(delayed, "name" = airports$faa)
-delayed %>%
-  mutate(name = dest) %>%
-  filter(???)
+### Update: the merge function is a thing! I just had to name the airport codes
+### column the same thing so R could merge the dataframes.
+colnames(airports)
 
+delayed
+colnames(delayed)
+codes_and_names <- select(airports, faa, name)
+colnames(codes_and_names) <- c("dest", "name")
+codes_and_names
+delayed <- merge(delayed, codes_and_names, by = "dest")
+dim(delayed)
+head(delayed)
+
+# dplyr has a similar function, the left_join()
+delayed <- group_by(flights, dest) %>%
+  summarise(delay = mean(arr_delay, na.rm = TRUE)) %>%
+  arrange(-delay)
+
+left_join(delayed, codes_and_names, by = "dest")
 
 
 # Which city was flown to with the highest average speed?
