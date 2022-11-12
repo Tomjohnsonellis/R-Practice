@@ -31,3 +31,6 @@ Joining data frames and asking questions about groups of data!
 ```
 left_join()
 ```
+
+## Exercise 7: using dplyr on external data
+New domain: Basketball scores, completely alien to me but adapting to new domains is a necessary skill for data scientists.
