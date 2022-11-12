@@ -19,3 +19,15 @@ proc.time - start_time
 ```
 ## Exercise 4: Practicing with dplyr
 More fun with pipes! This exercise works with flight data.
+```
+%>%
+```
+
+## Exercise 5: dplyr grouped operations
+More complex operations, using real world flight data.
+
+## Exercise 6: dplyr join operations
+Joining data frames and asking questions about groups of data!
+```
+left_join()
+```
