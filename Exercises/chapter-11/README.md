@@ -34,3 +34,6 @@ left_join()
 
 ## Exercise 7: using dplyr on external data
 New domain: Basketball scores, completely alien to me but adapting to new domains is a necessary skill for data scientists.
+
+## Exercise 8: exploring data sets
+End of chapter, working with some newspaper data, I've gotten much more proficient with dplyr now!

@@ -6,7 +6,7 @@ library(dplyr)
 # Use the `read.csv()` function to read in the included data set. Remember to
 # save it as a variable.
 setwd("~/GitHub/R-Practice/Exercises/chapter-11")
-my_data <- read.csv("data/nba_teams_2016.csv")
+my_data <- read.csv("data/nba_teams_2016.csv", stringsAsFactors = FALSE)
 
 # View the data frame you loaded, and get some basic information about the 
 # number of rows/columns. 
