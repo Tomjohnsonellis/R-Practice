@@ -171,7 +171,13 @@ diamonds_sample %>%
 # Start by creating a data frame `clarity_summary` that includes summarized data 
 # for each clarity group. Your summary data should include the mean price and the
 # standard error of the price.
-
+clarity_summary <- diamonds_sample %>%
+  group_by(clarity) %>%
+  summarize(mean = mean(price), sd = sd(price), se = sd(price) / sqrt(length(price)))
 
 # Then draw the plot. The error bars should stretch from the mean-error to the 
 # mean+error.
+clarity_summary %>%
+  ggplot(mapping = aes(x = clarity, y  = mean)) +
+  geom_bar(mapping = aes(fill = clarity), stat = "identity") +
+  geom_errorbar(mapping = aes(ymin = (mean - se), ymax = (mean + se)))
