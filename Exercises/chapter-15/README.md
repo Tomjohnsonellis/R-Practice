@@ -1,0 +1,2 @@
+# Chapter 15: Designing data visualisations
+There aren't any exercises from the book for this chapter so I decided to explore some data and visualise it, I decided on using a dataset of hair and eye colours of statistics students.
