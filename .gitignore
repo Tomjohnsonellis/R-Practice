@@ -48,3 +48,4 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 Exercises/chapter-14/apikey.R
+Exercises/chapter-17/data/uscitiesv14.csv
