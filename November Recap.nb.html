@@ -1882,16 +1882,83 @@ some_employee$surname</code></pre>
 </div>
 <div id="chapter-9-understanding-data" class="section level5">
 <h5><strong><em>Chapter 9: Understanding Data</em></strong></h5>
-<p>A more general topic of understanding where data comes from: Sensors,
-surveys, record keeping Where to find data: Government publications (Big
-up the ONS), Newspapers, Scientific research, social media, online
-communities Different types of data: Nominal (apples and oranges),
-Ordinal (5 star rating, 4 star rating), Ratio/Continuous (Ordered with a
-fixed 0), Interval (Ordered but no fixed 0)</p>
+<p>A more general topic about the world of data, covers topics such
+as:</p>
+<ul>
+<li>Where data comes from:
+<ul>
+<li>Sensors</li>
+<li>Surveys</li>
+<li>Record keeping</li>
+</ul></li>
+<li>Where to find data:
+<ul>
+<li>Government publications (Big up the ONS)</li>
+<li>Newspapers/Journalists</li>
+<li>Scientific research</li>
+<li>Social media</li>
+<li>Online communities</li>
+</ul></li>
+<li>Different types of data:
+<ul>
+<li>Nominal (apples and oranges)</li>
+<li>Ordinal (5 star rating, 4 star rating)</li>
+<li>Ratio/Continuous (Ordered with a fixed 0)</li>
+<li>Interval (Ordered but no fixed 0)</li>
+</ul></li>
+</ul>
+</div>
+<div id="chapter-10-data-frames" class="section level5">
+<h5><strong><em>Chapter 10: Data Frames</em></strong></h5>
+<p>Data frames are one of the most common ways to work with data, any
+table is a data frame, an Excel spreadsheet is a data frame.</p>
 <!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NCwibmNvbCI6Mywic3VtbWFyeSI6W119LCJyZGYiOiJINHNJQUFBQUFBQUFCbDFSUzA3RE1CQ2R4REZWTGJVZ2NZNWt3NklzQzFSSWJDdVEycVdUdW8xVlkxZjVxTERqYUJ5Rmt4VHMyQk9SV0xKbTNwdlBtN0hYcTgwZDJ6QUFJSkRFRVJCcVhhQnZyOC9wUFZqR2dnZ1NtRHI3WVpOdXUweUFHM3VURUtBUFNoWWlBUEpvOHVCT25zcTJPRXFNME5XbjR0bzZjMWU3M0VKM2x2bTN0K0xIMjdYSGZkNExEUGkrVG1MYVlFaXErYnVvdzRBa2tJa2pnMzlWQ25rb0cwUm5qNFpOcHBVNVo5aG9abS84RmFUR2FvWGlOYW9oeVhhODRkbStjcG9BbDFISnhKd2FhYlF0aXQxYjBsRnhWSTJJNjFhN1NYWnBVYmI2bUM2Y1FCZjJaeGI4NUo5UHZHVDhHMXBSWEZib2c5VDlkeWllQ3hYQTNHN2NMWnlkS3FueGRaaGw2Nnd4RGNjOFZoaUZUTGNiWFA0QVZscFk2VUlDQUFBPSJ9 -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["name"],"name":[1],"type":["chr"],"align":["left"]},{"label":["height"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["weight"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"Alice","2":"100","3":"50"},{"1":"Bob","2":"150","3":"75"},{"1":"Chuckie","2":"175","3":"100"},{"1":"Dylan","2":"75","3":"200"}],"options":{"columns":{"min":{},"max":[10],"total":[3]},"rows":{"min":[10],"max":[10],"total":[4]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="chapter-11-manipulating-data-with-dplyr" class="section level5">
+<h5><strong><em>Chapter 11: Manipulating data with
+dplyr</em></strong></h5>
+<p>dplyr is a very useful and popular package for wrangling data, it has
+a consistent “Grammar of data manipulation” * <em>Select</em> specific
+features * <em>Filter</em> out what you don’t want * <em>Mutate</em> a
+data set by creating new features * <em>Arrange</em> observations in
+some way * <em>Summarize</em> data in terms of aggregates (e.g. mean,
+median, range, max value) * <em>Join</em> data sets together</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6MywibmNvbCI6Miwic3VtbWFyeSI6eyJEZXNjcmlwdGlvbiI6WyJkZiBbMyDDlyAyXSJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUJsMVB5MG9ETVJTOWswd3NIV2dwaUo4eEE2SUxsL0dCMElVYkg5QnRta1liR3BNeWswR1g0ays0OFF2MEYveTIyaVNUaU9SdWN1NjU5OXlUYzN1MU9La1dGUUJnS0ZFQm1EZ0k1T0grdWo0RHg3aW1nQkxHL24xMVM0Y09lSEkyS01LQW5DdkpSV3p3aFZsR09McGM5M3dqaFlOVFA2RnpDRVhwbDY5dlN1OCszajkvampJZm90bXo2S0lIaW1UcHlUK0xtM21tR2JmbXBVbTZpZGU5RFY0NFA4NFY2OUx4UkZZclpsbnoySG9MZ0YwbUdabXRsVVk3RWZMcFNTWXUyb3lZOWRyL1pGWHpkYTgzOWZHcGR3anpvU1lSNDM4WURaN29OOTRpOGRhQjBFOVNwK0JFc2FWUXNabTZ5Q0Z4czIybHRpbUtZN3ZHR3N2U1hzV05Ta3dJQjdzOU8ybDF4L1VCQUFBPSJ9 -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["name"],"name":[1],"type":["chr"],"align":["left"]},{"label":["BMI"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"Alice","2":"50.00000"},{"1":"Bob","2":"33.33333"},{"1":"Chuckie","2":"32.65306"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[3]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="chapter-12-reshaping-data-with-tidyr" class="section level5">
+<h5><strong><em>Chapter 12: Reshaping Data with tidyr</em></strong></h5>
+<p>Tidy Data: 1. Each variable is in a column 2. Each observation is a
+row 3. Each value is a cell</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZ2F0aGVyKCkgIyBUbyBtYWtlIHlvdXIgZGF0YSBsb25nXG5zcHJlYWQoKSAjIFRvIG1ha2UgeW91ciBkYXRhIHdpZGVcbmBgYCJ9 -->
+<pre class="r"><code>gather() # To make your data long
+spread() # To make your data wide</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
 </div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIk5vdmVtYmVyIFJlY2FwIg0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0KIyMjIyMgKioqQ2hhcHRlciAxOiBHZXR0aW5nIFN0YXJ0ZWQqKioNCkluc3RhbGwgW1JTdHVkaW9dKGh0dHBzOi8vcG9zaXQuY28vZG93bmxvYWRzLykgJiBbR2l0XShodHRwczovL2dpdGZvcndpbmRvd3Mub3JnLykNCg0KIyMjIyMgKioqQ2hhcHRlciAyOiBVc2luZyB0aGUgY29tbWFuZCBsaW5lKioqDQpHZXQgY29tZm9ydGFibGUgdXNpbmcgdGhlIHRlcm1pbmFsIGZvciBuYXZpZ2F0aW9uIHVzaW5nIGNvbW1hbmRzIGxpa2U6IGxzLCBjZCwgbWtkaXINCltSZWZlcmVuY2VdKGh0dHBzOi8vcmlwdHV0b3JpYWwuY29tL3Rlcm1pbmFsL2V4YW1wbGUvMjYwMjMvYmFzaWMtbmF2aWdhdGlvbi1jb21tYW5kcykNCg0KIyMjIyMgKioqQ2hhcHRlciAzOiBWZXJzaW9uIENvbnRyb2wqKioNCkEgY2xvc2VyIGxvb2sgYXQgZ2l0L0dpdEh1YiwgbWFrZSBhIHJlcG8sIGNvbW1pdCB0byBpdA0KSGVyZSdzIFtNeSBHaXRodWJdKGh0dHBzOi8vZ2l0aHViLmNvbS9Ub21qb2huc29uZWxsaXMpDQoNCiMjIyMjICoqKkNoYXB0ZXIgNDogVXNpbmcgTWFya2Rvd24gZm9yIERvY3VtZW50YXRpb24qKioNCkFsbCBvZiB0aGUgcmVhZG1lcyBmb3IgdGhpcyBwcm9qZWN0IGFyZSBtYWRlIHVzaW5nIG1hcmtkb3duDQoNCiMjIyMjICoqKkNoYXB0ZXIgNTogSW50cm9kdWN0aW9uIHRvIFIqKioNCg0KYGBge3J9DQpwcmludCgiSGVsbG8gd29ybGQhIikNCg0KP2Z1bmN0aW9uICMgQnJpbmdzIHVwIGhlbHBmdWwgaW5mbw0KVFJVRSArIEZBTFNFICMgQm9vbGVhbnMNCmBgYA0KDQojIyMjIyAqKipDaGFwdGVyIDY6IEZ1bmN0aW9ucyoqKg0KYGBge3J9DQojIEhlcmUncyBhIGZ1bmN0aW9uIGRlY2xhcmF0aW9uDQpteV9jb29sX2Z1bmN0aW9uIDwtIGZ1bmN0aW9uKHNvbWVfdmFyaWFibGUsIGFub3RoZXJfdmFyaWFibGUpew0KICB2YWx1ZV90b19yZXR1cm4gPC0gc29tZV92YXJpYWJsZSArIGFub3RoZXJfdmFyaWFibGUNCiAgdmFsdWVfdG9fcmV0dXJuICMgVGhlIHZhbHVlIHRvIGJlIHJldHVybmVkIHNob3VsZCBiZSBjYWxsZWQgYXMgdGhlIGxhc3QgaW5zdHJ1Y3Rpb24NCn0NCg0KbXlfY29vbF9mdW5jdGlvbigxMCw1KQ0KDQojIEhlcmUgaXMgYSBmdW5jdGlvbiB3aXRoIGEgY29uZGl0aW9uYWwgc3RhdGVtZW50DQpncmVldF91c2VyIDwtIGZ1bmN0aW9uKG5hbWUpew0KICBpZiAobmFtZSA9PSAiVG9tIil7DQogICAgcHJpbnQoIldoYXQgaXMgdXAsIFQtRGF3ZyIpDQogIH0gZWxzZSB7DQogICAgc3ByaW50ZigiSGVsbG8gJSBzIiwgbmFtZSkNCiAgfQ0KfQ0KDQpncmVldF91c2VyKCJUb20iKQ0KZ3JlZXRfdXNlcigiSm9lIEJsb2dncyIpDQpgYGANCg0KIyMjIyMgKioqQ2hhcHRlciA3OiBWZWN0b3JzKioqDQpBIHZlY3RvciBpcyBhIGNvbGxlY3Rpb24gb2YgZGF0YSwgbGlrZSBhIGxpc3Qgb2YgbnVtYmVycyBvciBuYW1lcyBvciBkYXRlcyBvZiBiaXJ0aC4NClIgaXMgYSBwb3B1bGFyIGRhdGEgc2NpZW5jZSBsYW5ndWFnZSBhcyB0aGUgbWFqb3JpdHkgb2YgZnVuY3Rpb25zIGFuZCB0b29scyBhcmUgYnVpbHQgdG8gd29yayB3aXRoIHZlY3RvcmlzZWQgZGF0YS4NCmBgYHtyfQ0KYV92ZWN0b3IgPC0gYygxLDIsMyw0LDUpDQphX3ZlY3RvciAqIDINCmBgYA0KVGhpcyBhcHByb2FjaCBzY2FsZXMgdXAgdmVyeSB3ZWxsIGZvciB3b3JraW5nIHdpdGggYmlnIGRhdGFiYXNlcyEgSXQncyBib3RoIGVhc2llciB0byBmb2xsb3cgbG9naWNhbGx5IGFuZCBtb3JlIGVmZmljaWVudCBpbiB0ZXJtcyBvZiBjb21wdXRlciBwcm9jZXNzaW5nIQ0KDQojIyMjIyAqKipDaGFwdGVyIDg6IExpc3RzKioqDQpMaXN0cyBhcmUgZXNzZW50aWFsbHkgYSB2ZWN0b3IgdGhhdCBjYW4gaG9sZCBtdWx0aXBsZSBkYXRhIHR5cGVzLCB1c2VmdWwgZm9yIHdvcmtpbmcgd2l0aCByZWxhdGVkIGRhdGEuDQpgYGB7cn0NCnNvbWVfZW1wbG95ZWUgPC0gbGlzdCgNCiAgZm9yZW5hbWUgPSAiSm9lIiwNCiAgc3VybmFtZSA9ICJCbG9nZ3MiLA0KICBqb2IgPSAiQ0VPIiwNCiAgc2FsYXJ5ID0gOTk5OTk5LA0KICB1bmlvbl9tZW1iZXIgPSBUUlVFDQopDQoNCnNvbWVfZW1wbG95ZWUkc3VybmFtZQ0Kc29tZV9lbXBsb3llZVsyXQ0Kc29tZV9lbXBsb3llZVtbInN1cm5hbWUiXV0NCmBgYA0KDQojIyMjIyAqKipDaGFwdGVyIDk6IFVuZGVyc3RhbmRpbmcgRGF0YSoqKg0KQSBtb3JlIGdlbmVyYWwgdG9waWMgb2YgdW5kZXJzdGFuZGluZyB3aGVyZSBkYXRhIGNvbWVzIGZyb206DQpTZW5zb3JzLCBzdXJ2ZXlzLCByZWNvcmQga2VlcGluZw0KV2hlcmUgdG8gZmluZCBkYXRhOg0KR292ZXJubWVudCBwdWJsaWNhdGlvbnMgKEJpZyB1cCB0aGUgT05TKSwgTmV3c3BhcGVycywgU2NpZW50aWZpYyByZXNlYXJjaCwgc29jaWFsIG1lZGlhLCBvbmxpbmUgY29tbXVuaXRpZXMNCkRpZmZlcmVudCB0eXBlcyBvZiBkYXRhOg0KTm9taW5hbCAoYXBwbGVzIGFuZCBvcmFuZ2VzKSwgT3JkaW5hbCAoNSBzdGFyIHJhdGluZywgNCBzdGFyIHJhdGluZyksIFJhdGlvL0NvbnRpbnVvdXMgKE9yZGVyZWQgd2l0aCBhIGZpeGVkIDApLCBJbnRlcnZhbCAoT3JkZXJlZCBidXQgbm8gZml4ZWQgMCkNCg0K</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIk5vdmVtYmVyIFJlY2FwIg0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0KIyMjIyMgKioqQ2hhcHRlciAxOiBHZXR0aW5nIFN0YXJ0ZWQqKioNCkluc3RhbGwgW1JTdHVkaW9dKGh0dHBzOi8vcG9zaXQuY28vZG93bmxvYWRzLykgJiBbR2l0XShodHRwczovL2dpdGZvcndpbmRvd3Mub3JnLykNCg0KIyMjIyMgKioqQ2hhcHRlciAyOiBVc2luZyB0aGUgY29tbWFuZCBsaW5lKioqDQpHZXQgY29tZm9ydGFibGUgdXNpbmcgdGhlIHRlcm1pbmFsIGZvciBuYXZpZ2F0aW9uIHVzaW5nIGNvbW1hbmRzIGxpa2U6IGxzLCBjZCwgbWtkaXINCltSZWZlcmVuY2VdKGh0dHBzOi8vcmlwdHV0b3JpYWwuY29tL3Rlcm1pbmFsL2V4YW1wbGUvMjYwMjMvYmFzaWMtbmF2aWdhdGlvbi1jb21tYW5kcykNCg0KIyMjIyMgKioqQ2hhcHRlciAzOiBWZXJzaW9uIENvbnRyb2wqKioNCkEgY2xvc2VyIGxvb2sgYXQgZ2l0L0dpdEh1YiwgbWFrZSBhIHJlcG8sIGNvbW1pdCB0byBpdA0KSGVyZSdzIFtNeSBHaXRodWJdKGh0dHBzOi8vZ2l0aHViLmNvbS9Ub21qb2huc29uZWxsaXMpDQoNCiMjIyMjICoqKkNoYXB0ZXIgNDogVXNpbmcgTWFya2Rvd24gZm9yIERvY3VtZW50YXRpb24qKioNCkFsbCBvZiB0aGUgcmVhZG1lcyBmb3IgdGhpcyBwcm9qZWN0IGFyZSBtYWRlIHVzaW5nIG1hcmtkb3duDQoNCiMjIyMjICoqKkNoYXB0ZXIgNTogSW50cm9kdWN0aW9uIHRvIFIqKioNCg0KYGBge3J9DQpwcmludCgiSGVsbG8gd29ybGQhIikNCg0KP2Z1bmN0aW9uICMgQnJpbmdzIHVwIGhlbHBmdWwgaW5mbw0KVFJVRSArIEZBTFNFICMgQm9vbGVhbnMNCmBgYA0KDQojIyMjIyAqKipDaGFwdGVyIDY6IEZ1bmN0aW9ucyoqKg0KYGBge3J9DQojIEhlcmUncyBhIGZ1bmN0aW9uIGRlY2xhcmF0aW9uDQpteV9jb29sX2Z1bmN0aW9uIDwtIGZ1bmN0aW9uKHNvbWVfdmFyaWFibGUsIGFub3RoZXJfdmFyaWFibGUpew0KICB2YWx1ZV90b19yZXR1cm4gPC0gc29tZV92YXJpYWJsZSArIGFub3RoZXJfdmFyaWFibGUNCiAgdmFsdWVfdG9fcmV0dXJuICMgVGhlIHZhbHVlIHRvIGJlIHJldHVybmVkIHNob3VsZCBiZSBjYWxsZWQgYXMgdGhlIGxhc3QgaW5zdHJ1Y3Rpb24NCn0NCg0KbXlfY29vbF9mdW5jdGlvbigxMCw1KQ0KDQojIEhlcmUgaXMgYSBmdW5jdGlvbiB3aXRoIGEgY29uZGl0aW9uYWwgc3RhdGVtZW50DQpncmVldF91c2VyIDwtIGZ1bmN0aW9uKG5hbWUpew0KICBpZiAobmFtZSA9PSAiVG9tIil7DQogICAgcHJpbnQoIldoYXQgaXMgdXAsIFQtRGF3ZyIpDQogIH0gZWxzZSB7DQogICAgc3ByaW50ZigiSGVsbG8gJSBzIiwgbmFtZSkNCiAgfQ0KfQ0KDQpncmVldF91c2VyKCJUb20iKQ0KZ3JlZXRfdXNlcigiSm9lIEJsb2dncyIpDQpgYGANCg0KIyMjIyMgKioqQ2hhcHRlciA3OiBWZWN0b3JzKioqDQpBIHZlY3RvciBpcyBhIGNvbGxlY3Rpb24gb2YgZGF0YSwgbGlrZSBhIGxpc3Qgb2YgbnVtYmVycyBvciBuYW1lcyBvciBkYXRlcyBvZiBiaXJ0aC4NClIgaXMgYSBwb3B1bGFyIGRhdGEgc2NpZW5jZSBsYW5ndWFnZSBhcyB0aGUgbWFqb3JpdHkgb2YgZnVuY3Rpb25zIGFuZCB0b29scyBhcmUgYnVpbHQgdG8gd29yayB3aXRoIHZlY3RvcmlzZWQgZGF0YS4NCmBgYHtyfQ0KYV92ZWN0b3IgPC0gYygxLDIsMyw0LDUpDQphX3ZlY3RvciAqIDINCmBgYA0KVGhpcyBhcHByb2FjaCBzY2FsZXMgdXAgdmVyeSB3ZWxsIGZvciB3b3JraW5nIHdpdGggYmlnIGRhdGFiYXNlcyEgSXQncyBib3RoIGVhc2llciB0byBmb2xsb3cgbG9naWNhbGx5IGFuZCBtb3JlIGVmZmljaWVudCBpbiB0ZXJtcyBvZiBjb21wdXRlciBwcm9jZXNzaW5nIQ0KDQojIyMjIyAqKipDaGFwdGVyIDg6IExpc3RzKioqDQpMaXN0cyBhcmUgZXNzZW50aWFsbHkgYSB2ZWN0b3IgdGhhdCBjYW4gaG9sZCBtdWx0aXBsZSBkYXRhIHR5cGVzLCB1c2VmdWwgZm9yIHdvcmtpbmcgd2l0aCByZWxhdGVkIGRhdGEuDQpgYGB7cn0NCnNvbWVfZW1wbG95ZWUgPC0gbGlzdCgNCiAgZm9yZW5hbWUgPSAiSm9lIiwNCiAgc3VybmFtZSA9ICJCbG9nZ3MiLA0KICBqb2IgPSAiQ0VPIiwNCiAgc2FsYXJ5ID0gOTk5OTk5LA0KICB1bmlvbl9tZW1iZXIgPSBUUlVFDQopDQoNCnNvbWVfZW1wbG95ZWUkc3VybmFtZQ0Kc29tZV9lbXBsb3llZVsyXQ0Kc29tZV9lbXBsb3llZVtbInN1cm5hbWUiXV0NCmBgYA0KDQojIyMjIyAqKipDaGFwdGVyIDk6IFVuZGVyc3RhbmRpbmcgRGF0YSoqKg0KQSBtb3JlIGdlbmVyYWwgdG9waWMgYWJvdXQgdGhlIHdvcmxkIG9mIGRhdGEsIGNvdmVycyB0b3BpY3Mgc3VjaCBhczoNCg0KKiBXaGVyZSBkYXRhIGNvbWVzIGZyb206DQogICsgU2Vuc29ycw0KICArIFN1cnZleXMNCiAgKyBSZWNvcmQga2VlcGluZw0KKiBXaGVyZSB0byBmaW5kIGRhdGE6DQogICsgR292ZXJubWVudCBwdWJsaWNhdGlvbnMgKEJpZyB1cCB0aGUgT05TKQ0KICArIE5ld3NwYXBlcnMvSm91cm5hbGlzdHMNCiAgKyBTY2llbnRpZmljIHJlc2VhcmNoDQogICsgU29jaWFsIG1lZGlhDQogICsgT25saW5lIGNvbW11bml0aWVzDQoqIERpZmZlcmVudCB0eXBlcyBvZiBkYXRhOg0KICArIE5vbWluYWwgKGFwcGxlcyBhbmQgb3JhbmdlcykNCiAgKyBPcmRpbmFsICg1IHN0YXIgcmF0aW5nLCA0IHN0YXIgcmF0aW5nKQ0KICArIFJhdGlvL0NvbnRpbnVvdXMgKE9yZGVyZWQgd2l0aCBhIGZpeGVkIDApDQogICsgSW50ZXJ2YWwgKE9yZGVyZWQgYnV0IG5vIGZpeGVkIDApDQoNCiMjIyMjICoqKkNoYXB0ZXIgMTA6IERhdGEgRnJhbWVzKioqDQpEYXRhIGZyYW1lcyBhcmUgb25lIG9mIHRoZSBtb3N0IGNvbW1vbiB3YXlzIHRvIHdvcmsgd2l0aCBkYXRhLCBhbnkgdGFibGUgaXMgYSBkYXRhIGZyYW1lLCBhbiBFeGNlbCBzcHJlYWRzaGVldCBpcyBhIGRhdGEgZnJhbWUuDQpgYGB7cn0NCm5hbWUgPC0gYygiQWxpY2UiLCJCb2IiLCJDaHVja2llIiwiRHlsYW4iKQ0KaGVpZ2h0IDwtIGMoMTAwLDE1MCwxNzUsNzUpDQp3ZWlnaHQgPC0gYyg1MCw3NSwxMDAsMjAwKQ0KDQpteV9kYXRhZnJhbWUgPC0gZGF0YS5mcmFtZShuYW1lLCBoZWlnaHQsIHdlaWdodCkNCm15X2RhdGFmcmFtZQ0KDQpgYGANCg0KIyMjIyMgKioqQ2hhcHRlciAxMTogTWFuaXB1bGF0aW5nIGRhdGEgd2l0aCBkcGx5cioqKg0KZHBseXIgaXMgYSB2ZXJ5IHVzZWZ1bCBhbmQgcG9wdWxhciBwYWNrYWdlIGZvciB3cmFuZ2xpbmcgZGF0YSwgaXQgaGFzIGEgY29uc2lzdGVudCAiR3JhbW1hciBvZiBkYXRhIG1hbmlwdWxhdGlvbiINCiogKlNlbGVjdCogc3BlY2lmaWMgZmVhdHVyZXMNCiogKkZpbHRlciogb3V0IHdoYXQgeW91IGRvbid0IHdhbnQNCiogKk11dGF0ZSogYSBkYXRhIHNldCBieSBjcmVhdGluZyBuZXcgZmVhdHVyZXMNCiogKkFycmFuZ2UqIG9ic2VydmF0aW9ucyBpbiBzb21lIHdheQ0KKiAqU3VtbWFyaXplKiBkYXRhIGluIHRlcm1zIG9mIGFnZ3JlZ2F0ZXMgKGUuZy4gbWVhbiwgbWVkaWFuLCByYW5nZSwgbWF4IHZhbHVlKQ0KKiAqSm9pbiogZGF0YSBzZXRzIHRvZ2V0aGVyDQpgYGB7cn0NCmxpYnJhcnkoZHBseXIpDQpteV9kYXRhZnJhbWUgJT4lDQogIGZpbHRlcih3ZWlnaHQgPCAyMDApICU+JQ0KICBtdXRhdGUoIkJNSSIgPSB3ZWlnaHQgLyAoaGVpZ2h0LzEwMCleMikgJT4lDQogIHNlbGVjdChuYW1lLCBCTUkpDQoNCmBgYA0KDQojIyMjIyAqKipDaGFwdGVyIDEyOiBSZXNoYXBpbmcgRGF0YSB3aXRoIHRpZHlyKioqDQpUaWR5IERhdGE6DQoxLiBFYWNoIHZhcmlhYmxlIGlzIGluIGEgY29sdW1uDQoyLiBFYWNoIG9ic2VydmF0aW9uIGlzIGEgcm93DQozLiBFYWNoIHZhbHVlIGlzIGEgY2VsbA0KYGBge3J9DQpnYXRoZXIoKSAjIFRvIG1ha2UgeW91ciBkYXRhIGxvbmcNCnNwcmVhZCgpICMgVG8gbWFrZSB5b3VyIGRhdGEgd2lkZQ0K</div>
 
 
 

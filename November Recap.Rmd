@@ -75,10 +75,58 @@ some_employee[["surname"]]
 ```
 
 ##### ***Chapter 9: Understanding Data***
-A more general topic of understanding where data comes from:
-Sensors, surveys, record keeping
-Where to find data:
-Government publications (Big up the ONS), Newspapers, Scientific research, social media, online communities
-Different types of data:
-Nominal (apples and oranges), Ordinal (5 star rating, 4 star rating), Ratio/Continuous (Ordered with a fixed 0), Interval (Ordered but no fixed 0)
+A more general topic about the world of data, covers topics such as:
 
+* Where data comes from:
+  + Sensors
+  + Surveys
+  + Record keeping
+* Where to find data:
+  + Government publications (Big up the ONS)
+  + Newspapers/Journalists
+  + Scientific research
+  + Social media
+  + Online communities
+* Different types of data:
+  + Nominal (apples and oranges)
+  + Ordinal (5 star rating, 4 star rating)
+  + Ratio/Continuous (Ordered with a fixed 0)
+  + Interval (Ordered but no fixed 0)
+
+##### ***Chapter 10: Data Frames***
+Data frames are one of the most common ways to work with data, any table is a data frame, an Excel spreadsheet is a data frame.
+```{r}
+name <- c("Alice","Bob","Chuckie","Dylan")
+height <- c(100,150,175,75)
+weight <- c(50,75,100,200)
+
+my_dataframe <- data.frame(name, height, weight)
+my_dataframe
+
+```
+
+##### ***Chapter 11: Manipulating data with dplyr***
+dplyr is a very useful and popular package for wrangling data, it has a consistent "Grammar of data manipulation"
+* *Select* specific features
+* *Filter* out what you don't want
+* *Mutate* a data set by creating new features
+* *Arrange* observations in some way
+* *Summarize* data in terms of aggregates (e.g. mean, median, range, max value)
+* *Join* data sets together
+```{r}
+library(dplyr)
+my_dataframe %>%
+  filter(weight < 200) %>%
+  mutate("BMI" = weight / (height/100)^2) %>%
+  select(name, BMI)
+
+```
+
+##### ***Chapter 12: Reshaping Data with tidyr***
+Tidy Data:
+1. Each variable is in a column
+2. Each observation is a row
+3. Each value is a cell
+```{r}
+gather() # To make your data long
+spread() # To make your data wide
