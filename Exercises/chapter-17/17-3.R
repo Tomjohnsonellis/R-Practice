@@ -49,6 +49,18 @@ map %>% addCircleMarkers(
 # new column `radius` that is the population relative to the maximum population
 # times a constant number of pixels (e.g., 3). If you want the *area* to be
 # proportional to the data, you should *square* this value.
-
+colnames(most_populous)
+most_populous <- most_populous %>%
+  mutate(radius = ( (population/max(population)) * 3)^2 )
 
 # Remake the map from above, specifying the `radius` column as the radius
+map <- most_populous %>% leaflet() %>% addTiles()
+map %>% addCircleMarkers(
+  lat = ~lat, 
+  lng = ~lng, 
+  popup = ~city,
+  stroke = FALSE,
+  radius = most_populous$radius,
+  fillOpacity = 0.5
+)
+ ## Cool!

@@ -16,3 +16,4 @@ a_plot %>% ly_bar(x,y)
 
 ## Exercise 3: Mapping U.S. city populations
 ## (using leaflet)
+Using data about cities we are able to quickly create an interactive map of america with circles representing the populations of each city!
