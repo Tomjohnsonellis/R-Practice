@@ -130,3 +130,18 @@ Tidy Data:
 ```{r}
 gather() # To make your data long
 spread() # To make your data wide
+```
+
+##### ***Chapter 13: Accessing Databases***
+A little intro into using SQL and some info about relational databases.
+Relational databases are pretty much a necessity for working with more complex data structures, requiring information to be stored in different places for different reasons. An example would be a music library, it is much more scalable to have a big database of artists and a separate big database of songs, pulling the necessary data as needed rather than having it all in one huge mess.
+R can be used to work with databases, like so:
+```{r}
+print("Hello")
+library("RSQLite") # An SQL package
+library("dplyr") # Good ol' dplyr
+
+setwd("~/GitHub/R-Practice/Exercises/chapter-13/data")
+database_connection <- dbConnect(SQLite(), dbname = "path/to/database")
+database_connection <- dbConnect(SQLite(), dbname = "C")
+print("Hello")
