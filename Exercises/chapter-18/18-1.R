@@ -44,12 +44,14 @@ is.list(response_data) # True
 # Manually inspect the returned data and identify the content of interest 
 # (which are the movie reviews).
 # Use functions such as `names()`, `str()`, etc.
-names(response_data)
-names(response_data$results)
-str(response_data)
-colnames(response_data) # NULL
-response_data$results$headline
-response_data$results$summary_short # "results" seems to be where the info we want is!
+
+### These were being output when the script was source()'d by the notebook
+# names(response_data)
+# names(response_data$results)
+# str(response_data)
+# colnames(response_data) # NULL
+# response_data$results$headline
+# response_data$results$summary_short # "results" seems to be where the info we want is!
 
 
 # Flatten the movie reviews content into a data structure called `reviews`
@@ -71,6 +73,6 @@ my_link <- most_recent_info$link.url
 # Create a list of the three pieces of information from above. 
 # Print out the list.
 my_list <- list(my_headline, my_summary, my_link)
-my_list
+# my_list
 
 # I would check out the review but there's a paywall, what a shame.

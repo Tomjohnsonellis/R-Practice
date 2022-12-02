@@ -1,0 +1,22 @@
+---
+title: "A Movie Review"
+author: "Thomas Johnson-Ellis"
+date: "02/12/2022"
+output: html_notebook
+---
+```{r setup, include=FALSE}
+setwd("~/GitHub/R-Practice/Exercises/chapter-18")
+source("18-1.R")
+
+```
+# _An example R markdown report_
+
+
+The following info is pulled from the New York Times API via an R script and then rendered by this R markdown file, neat!
+
+*****
+
+### `r my_headline`
+> `r my_summary`
+
+***This article can be viewed via a paywall at [this location](`r my_link`)***
