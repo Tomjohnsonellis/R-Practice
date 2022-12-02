@@ -221,3 +221,15 @@ ggplot(data = df, aes(x,y)) +
 ```
 
 There a bunch of different plotting styles and colour palettes and co-ordinate systems, each graph will require consideration on how best to display the data, then ggplot can be given the data and instructions to produce that graph.
+
+##### ***Chapter 17: Interactive Visualisation in R***
+There are a few packages that give you "interactive" graphs very easily!
+plotly, rbokeh and leaflet are covered in the book.
+In short: plotly and rbokeh are pretty similar, leaflet is good for maps.
+
+##### ***Chapter 18: Dynamic Reports with R Markdown***
+This whole recap was written in R markdown!
+It can also do inline commands too, for example:`
+![Code](img/code.PNG)
+
+becomes: I love exponents, `r 2^10` is a great one!
