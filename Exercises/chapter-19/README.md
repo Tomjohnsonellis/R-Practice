@@ -58,3 +58,7 @@ output$plot <- renderPlot(
         
         
 ```
+
+
+## Exercise 4: complex Shiny UI layouts
+Using more shiny objects to construct website layouts, all done via code!
