@@ -54,6 +54,7 @@ A vector is a collection of data, like a list of numbers or names or dates of bi
 R is a popular data science language as the majority of functions and tools are built to work with vectorised data.
 ```{r}
 a_vector <- c(1,2,3,4,5)
+a_vector
 a_vector * 2
 ```
 This approach scales up very well for working with big databases! It's both easier to follow logically and more efficient in terms of computer processing!
