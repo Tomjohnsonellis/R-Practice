@@ -47,7 +47,7 @@ size_input <- sliderInput(
 # Create a variable `ui` that is a `fluidPage()` ui element. 
 # It should contain:
 ui <- fluidPage(
-  titlePanel("An interactive graph of the inbuild mpg dataset"),
+  titlePanel("An interactive graph of the built in mpg dataset"),
   x_input,
   y_input,
   colour_input,

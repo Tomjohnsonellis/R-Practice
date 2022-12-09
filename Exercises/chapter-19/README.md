@@ -62,3 +62,19 @@ output$plot <- renderPlot(
 
 ## Exercise 4: complex Shiny UI layouts
 Using more shiny objects to construct website layouts, all done via code!
+It's considered good practice to split the shiny app into 2 files, one for the ui and one for the server, as debugging shiny apps can be a hassle.
+```
+# app.R
+source("my_app_ui.R") # Creates the UI in a variable called "my_ui"
+source("my_app_server.R") # Creates the server in a variable called "my_server"
+shinyApp(ui = my_ui, server = my_server)
+```
+
+## Exercise 5: An interactive scatter plot
+Using dropdowns to create a scatter plot of the "MPG" dataset, you can also change the colour.
+
+## Exercise 6: Interactive mapping
+The server should be responsible for any "backend" work like creating the dataset and processing it, the UI should be responsible for just displaying things.
+
+## Exercise 7: interactive applications
+The final shiny exercise, we create an app with 2 pages, with a different interactive graph on each page, looks clean and does indeed function!
