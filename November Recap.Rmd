@@ -233,3 +233,22 @@ It can also do inline commands too, for example:`
 ![Code](img/code.PNG)
 
 becomes: I love exponents, `r 2^10` is a great one!
+
+##### ***Chapter 19: Building Interactive Web Applications with Shiny***
+This was a fun chapter, shiny allows you to build simple websites with code.
+The layouts are created with different objects like titlePanel(), sidebarPanel() etc, then the content is rendered into a webpage!
+
+It's considered best practice to split the website into separate files, a UI file, a server file, and an app.R file that brings them together.
+
+```{r}
+setwd("~/GitHub/R-Practice")
+# app.R
+source("shiny/my_ui_file.R") # Creates "my_ui"
+source("shiny/my_server_file.R") # Creates "my_server"
+shinyApp(ui = my_ui, server = my_server)
+
+# This website may be ugly, but it does work!
+
+```
+Here's a demo of the website:
+![Website Demo](img/screengrab.gif)
